@@ -13,5 +13,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
+  },
+  homepage: "https://vinodmatur.github.io/react-crud-project",
+  scripts: {
+    predeploy: "npm run build",
+    deploy: "gh-pages -d build"
   }
 })
